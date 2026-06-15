@@ -13,9 +13,11 @@ from .models import SourceFile, LearnedMapping, ValueMapping, HardcodedDefault, 
 from .services.learning_engine import LearningEngine
 from .services.generation_service import GenerationService
 from .services.excel_processor import ExcelProcessor
+from .seed_manager import seed_database
 
 # Initialize database tables
 Base.metadata.create_all(bind=engine)
+seed_database()
 
 app = FastAPI(title="Amazon Auto Lister API", version="1.0.0")
 

@@ -1,0 +1,3699 @@
+{
+  "learned_mappings": [
+    {
+      "amazon_attribute": "contribution_sku#1.value",
+      "internal_column": "master_sheet.contribution_sku#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_name[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.item_name[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "brand[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.brand[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "amzn1.volt.ca.product_id_value",
+      "internal_column": "item_directory.ITEM CODE",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "model_number[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "item_directory.ITEM NAME",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "model_name[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "item_directory.Item Color",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "product_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.product_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#2.value",
+      "internal_column": "master_sheet.bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#2.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#3.value",
+      "internal_column": "master_sheet.bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#3.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#4.value",
+      "internal_column": "master_sheet.bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#4.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#5.value",
+      "internal_column": "master_sheet.bullet_point[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#5.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "fabric_type[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.fabric_type[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_type_name[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "item_directory.CATEGORY",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "part_number[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "item_directory.ITEM CODE",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "external_product_information[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.external_product_information[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "sleeve[marketplace_id=A21TJRUUN4KGV]#1.type[language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.sleeve[marketplace_id=A21TJRUUN4KGV]#1.type[language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "purchasable_offer[marketplace_id=A21TJRUUN4KGV][audience=ALL]#1.maximum_retail_price#1.schedule#1.value_with_tax",
+      "internal_column": "item_directory.MRP",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "material[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.material[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_column": "master_sheet.color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "care_instructions[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.care_instructions[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "product_type#1.value",
+      "internal_column": "master_sheet.product_type#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "item_directory.SIZE",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "::record_action",
+      "internal_column": "master_sheet.::record_action",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "parentage_level[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.parentage_level[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "child_parent_sku_relationship[marketplace_id=A21TJRUUN4KGV]#1.parent_sku",
+      "internal_column": "master_sheet.child_parent_sku_relationship[marketplace_id=A21TJRUUN4KGV]#1.parent_sku",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "variation_theme#1.name",
+      "internal_column": "master_sheet.variation_theme#1.name",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "amzn1.volt.ca.product_id_type",
+      "internal_column": "master_sheet.amzn1.volt.ca.product_id_type",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "recommended_browse_nodes[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.recommended_browse_nodes[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "manufacturer[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.manufacturer[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "main_product_image_locator[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.main_product_image_locator[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_1[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_1[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_2[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_2[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_3[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_3[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_4[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_4[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_5[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_5[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_6[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_6[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.8,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "other_product_image_locator_7[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "internal_column": "master_sheet.other_product_image_locator_7[marketplace_id=A21TJRUUN4KGV]#1.media_location",
+      "confidence_score": 0.7111111111111111,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "style[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.style[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "department[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.department[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "target_gender[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.target_gender[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "age_range_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.age_range_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_column": "master_sheet.shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_column": "master_sheet.shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_column": "master_sheet.shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_column": "master_sheet.shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "number_of_items[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.number_of_items[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "fit_type[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_column": "master_sheet.fit_type[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "unit_count[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.number_of_items[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "external_product_information[marketplace_id=A21TJRUUN4KGV]#1.entity",
+      "internal_column": "master_sheet.external_product_information[marketplace_id=A21TJRUUN4KGV]#1.entity",
+      "confidence_score": 1.0,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "condition_type[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "internal_column": "master_sheet.condition_type[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "product_tax_code#1.value",
+      "internal_column": "master_sheet.product_tax_code#1.value",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "fulfillment_availability#1.fulfillment_channel_code",
+      "internal_column": "master_sheet.fulfillment_availability#1.fulfillment_channel_code",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "purchasable_offer[marketplace_id=A21TJRUUN4KGV][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+      "internal_column": "master_sheet.purchasable_offer[marketplace_id=A21TJRUUN4KGV][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+      "confidence_score": 0.9777777777777777,
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "footwear_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_column": "item_directory.SIZE",
+      "confidence_score": 1.0,
+      "is_active": true
+    }
+  ],
+  "value_mappings": [
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-3Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "3-4Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "4-5Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "5-6Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "7-8Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "9-10Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "11-12Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "13-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-3Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "3-4Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "4-5Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "5-6Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "7-8Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "9-10Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "11-12Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "13-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-3Y",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "3-4Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "4-5Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "5-6Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "7-8Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "9-10Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "11-12Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "13-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-3Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "3-4Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "4-5Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "5-6Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "7-8Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "9-10Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "11-12Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "13-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. GREEN",
+      "amazon_value": "Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS002848-LT. GREEN",
+      "amazon_value": "Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "GREY",
+      "amazon_value": "Grey",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS003150-GREY",
+      "amazon_value": "Grey",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "Grey",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS003150-LT. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "Blue",
+      "confidence_score": 0.5454545454545454
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "OFF-WHITE",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS003152-OFF-WHITE",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "Off White",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "NAVY BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS003152-NAVY BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPS002847-LT. GREEN",
+      "amazon_value": "Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "MAROON / WHITE",
+      "amazon_value": "Maroon",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGTOPW001956-MAROON / WHITE",
+      "amazon_value": "Maroon",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "Maroon",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBSRHS003072-BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBSRHS003072-LT. GREEN",
+      "amazon_value": "Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBSRHS003395-BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "Black",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBSRHS003395-WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "#N/A",
+      "amazon_value": "White",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. GREEN",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS002848-LT. GREEN",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "GREY",
+      "amazon_value": "Grey",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS003150-GREY",
+      "amazon_value": "Grey",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Grey",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. BLUE",
+      "amazon_value": "Light Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS003150-LT. BLUE",
+      "amazon_value": "Light Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Light Blue",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "OFF-WHITE",
+      "amazon_value": "Off-White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS003152-OFF-WHITE",
+      "amazon_value": "Off-White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Off-White",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "NAVY BLUE",
+      "amazon_value": "Navy Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS003152-NAVY BLUE",
+      "amazon_value": "Navy Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Navy Blue",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPS002847-LT. GREEN",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "MAROON / WHITE",
+      "amazon_value": "Maroon & White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGTOPW001956-MAROON / WHITE",
+      "amazon_value": "Maroon & White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Maroon & White",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBSRHS003072-BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Blue",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBSRHS003072-LT. GREEN",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBSRHS003395-BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "Black",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBSRHS003395-WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "#N/A",
+      "amazon_value": "White",
+      "confidence_score": 0.18181818181818182
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "MID BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDNEW002291-MID BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "DK. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.34782608695652173
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDNEW002291-DK. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. PINK / WHITE",
+      "amazon_value": "Pink",
+      "confidence_score": 0.21739130434782608
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS003495-LT. PINK / WHITE",
+      "amazon_value": "Pink",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS002965-LT. PINK / WHITE",
+      "amazon_value": "Pink",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PEACH / WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.21739130434782608
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS003495-PEACH / WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS002965-PEACH / WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS003140-DK. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "MUSTARD",
+      "amazon_value": "Mustard",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSCS003140-MUSTARD",
+      "amazon_value": "Mustard",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. PURPLE / DK. BLUE",
+      "amazon_value": "Purple",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGCSKS002956-LT. PURPLE / DK. BLUE",
+      "amazon_value": "Purple",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNEW002288-MID BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNEW002288-DK. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "BEIGE",
+      "amazon_value": "Beige",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSHS002948-BEIGE",
+      "amazon_value": "Beige",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. TEAL",
+      "amazon_value": "Teal",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSHS002948-LT. TEAL",
+      "amazon_value": "Teal",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSCS002761-LT. GREEN",
+      "amazon_value": "Green",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "YELLOW",
+      "amazon_value": "Yellow",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSHS002947-YELLOW",
+      "amazon_value": "Yellow",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "WHITE / LT. GREEN",
+      "amazon_value": "White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSCS002946-WHITE / LT. GREEN",
+      "amazon_value": "White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "WHITE / LT. BLUE",
+      "amazon_value": "White",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSCS002946-WHITE / LT. BLUE",
+      "amazon_value": "White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSCS002949-WHITE / LT. BLUE",
+      "amazon_value": "White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "OFF-WHITE / BROWN",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBCSCS002949-OFF-WHITE / BROWN",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "MID BLUE",
+      "amazon_value": "Mid-Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDNEW002291-MID BLUE",
+      "amazon_value": "MID-BLUE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "DK. BLUE",
+      "amazon_value": "DARK BLUE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDNEW002291-DK. BLUE",
+      "amazon_value": "DARK BLUE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. PINK / WHITE",
+      "amazon_value": "LIGHT PINK & WHITE",
+      "confidence_score": 0.21739130434782608
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS003495-LT. PINK / WHITE",
+      "amazon_value": "LIGHT PINK & WHITE",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS002965-LT. PINK / WHITE",
+      "amazon_value": "LIGHT PINK & WHITE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PEACH / WHITE",
+      "amazon_value": "PEACH & WHITE",
+      "confidence_score": 0.21739130434782608
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS003495-PEACH / WHITE",
+      "amazon_value": "PEACH & WHITE",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS002965-PEACH / WHITE",
+      "amazon_value": "PEACH & WHITE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "DK. BLUE",
+      "amazon_value": "DARK-BLUE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS003140-DK. BLUE",
+      "amazon_value": "DARK-BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "MUSTARD",
+      "amazon_value": "MUSTARD",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSCS003140-MUSTARD",
+      "amazon_value": "MUSTARD",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. PURPLE / DK. BLUE",
+      "amazon_value": "LIGHT PURPLE & DARK BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGCSKS002956-LT. PURPLE / DK. BLUE",
+      "amazon_value": "LIGHT PURPLE & DARK BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNEW002288-MID BLUE",
+      "amazon_value": "MID-BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNEW002288-DK. BLUE",
+      "amazon_value": "DARK-BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "BEIGE",
+      "amazon_value": "BEIGE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSHS002948-BEIGE",
+      "amazon_value": "BEIGE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. TEAL",
+      "amazon_value": "LIGHT TEAL",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSHS002948-LT. TEAL",
+      "amazon_value": "LIGHT TEAL",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSCS002761-LT. GREEN",
+      "amazon_value": "LIGHT GREEN",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "YELLOW",
+      "amazon_value": "YELLOW",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSHS002947-YELLOW",
+      "amazon_value": "YELLOW",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "WHITE / LT. GREEN",
+      "amazon_value": "WHITE & LIGHT GREEN",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSCS002946-WHITE / LT. GREEN",
+      "amazon_value": "WHITE & LIGHT GREEN",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "WHITE / LT. BLUE",
+      "amazon_value": "WHITE & LIGHT BLUE",
+      "confidence_score": 0.17391304347826086
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSCS002946-WHITE / LT. BLUE",
+      "amazon_value": "WHITE & LIGHT BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSCS002949-WHITE / LT. BLUE",
+      "amazon_value": "WHITE & LIGHT BLUE",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "OFF-WHITE / BROWN",
+      "amazon_value": "OFF WHITE & BROWN",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBCSCS002949-OFF-WHITE / BROWN",
+      "amazon_value": "OFF WHITE & BROWN",
+      "confidence_score": 0.08695652173913043
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6M",
+      "amazon_value": "0-6M",
+      "confidence_score": 0.30434782608695654
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "0-6M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "6-12M",
+      "amazon_value": "6-12M",
+      "confidence_score": 0.30434782608695654
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "6-12M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12-18M",
+      "amazon_value": "12-18M",
+      "confidence_score": 0.34782608695652173
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "12-18M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "18-24M",
+      "amazon_value": "18-24M",
+      "confidence_score": 0.34782608695652173
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "18-24M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-3Y",
+      "amazon_value": "2-3Y",
+      "confidence_score": 0.10869565217391304
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "2-3Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "3-4Y",
+      "amazon_value": "3-4Y",
+      "confidence_score": 0.10869565217391304
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "3-4Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "4-5Y",
+      "amazon_value": "4-5Y",
+      "confidence_score": 0.10869565217391304
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "4-5Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "5-6Y",
+      "amazon_value": "5-6Y",
+      "confidence_score": 0.10869565217391304
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-6Y",
+      "amazon_value": "5-6Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "12-18M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "18-24M",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "2-3Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "3-4Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "4-5Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "5-6Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "7-8Y",
+      "amazon_value": "7-8Y",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "7-8Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "9-10Y",
+      "amazon_value": "9-10Y",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "9-10Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "11-12Y",
+      "amazon_value": "11-12Y",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "11-12Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "13-14Y",
+      "amazon_value": "13-14Y",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "12M-14Y",
+      "amazon_value": "13-14Y",
+      "confidence_score": 0.043478260869565216
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24 M",
+      "amazon_value": "0-6M",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24 M",
+      "amazon_value": "6-12M",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24 M",
+      "amazon_value": "12-18M",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24 M",
+      "amazon_value": "18-24M",
+      "confidence_score": 0.06521739130434782
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24M",
+      "amazon_value": "0-6M",
+      "confidence_score": 0.1956521739130435
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24M",
+      "amazon_value": "6-12M",
+      "confidence_score": 0.1956521739130435
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24M",
+      "amazon_value": "12-18M",
+      "confidence_score": 0.1956521739130435
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "0-24M",
+      "amazon_value": "18-24M",
+      "confidence_score": 0.1956521739130435
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "2-3Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "3-4Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "4-5Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "5-6Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "7-8Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "9-10Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "11-12Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "size[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "2-14Y",
+      "amazon_value": "13-14Y",
+      "confidence_score": 0.021739130434782608
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-3Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 1.7777777777777777
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "3-4Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "4-5Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "5-6Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "7-8Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "9-10Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "11-12Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "13-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "0-6M",
+      "amazon_value": "IN",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "0-24 M",
+      "amazon_value": "IN",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "6-12M",
+      "amazon_value": "IN",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "12-18M",
+      "amazon_value": "IN",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "18-24M",
+      "amazon_value": "IN",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-3Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 1.7777777777777777
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "3-4Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "4-5Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "5-6Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "7-8Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "9-10Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "11-12Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "13-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "0-6M",
+      "amazon_value": "Age",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "0-24 M",
+      "amazon_value": "Age",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "6-12M",
+      "amazon_value": "Age",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "12-18M",
+      "amazon_value": "Age",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "18-24M",
+      "amazon_value": "Age",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-3Y",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "3-4Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "4-5Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "5-6Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "7-8Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "9-10Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "11-12Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "13-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "0-6M",
+      "amazon_value": "0 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "0-24 M",
+      "amazon_value": "0 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "6-12M",
+      "amazon_value": "6 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "0-24 M",
+      "amazon_value": "6 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "12-18M",
+      "amazon_value": "12 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "0-24 M",
+      "amazon_value": "12 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "18-24M",
+      "amazon_value": "18 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "0-24 M",
+      "amazon_value": "18 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-3Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "3-4Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "4-5Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "5-6Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "7-8Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "9-10Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "11-12Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "13-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "0-6M",
+      "amazon_value": "6 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "0-24 M",
+      "amazon_value": "6 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "6-12M",
+      "amazon_value": "12 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "0-24 M",
+      "amazon_value": "12 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "12-18M",
+      "amazon_value": "18 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "0-24 M",
+      "amazon_value": "18 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "18-24M",
+      "amazon_value": "24 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "0-24 M",
+      "amazon_value": "24 Months",
+      "confidence_score": 0.05555555555555555
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "MULTI BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS002869-MULTI BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS002826-OFF-WHITE",
+      "amazon_value": "Off White",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003139-PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.1111111111111111
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LAVENDER",
+      "amazon_value": "Lavender",
+      "confidence_score": 0.3333333333333333
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003139-LAVENDER",
+      "amazon_value": "Lavender",
+      "confidence_score": 0.1111111111111111
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "LT. PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003431-LT. PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003431-LT. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003286-NAVY BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "AQUA",
+      "amazon_value": "Aqua",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS003559-AQUA",
+      "amazon_value": "Aqua",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDRSS002865-LAVENDER",
+      "amazon_value": "Lavender",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDNDA003008-MID BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "MULTI BLUE",
+      "amazon_value": "MULTI BLUE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS002869-MULTI BLUE",
+      "amazon_value": "MULTI BLUE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS002826-OFF-WHITE",
+      "amazon_value": "OFF-WHITE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003139-PINK",
+      "amazon_value": "PINK.",
+      "confidence_score": 0.1111111111111111
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LAVENDER",
+      "amazon_value": "LAVENDER.",
+      "confidence_score": 0.1111111111111111
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003139-LAVENDER",
+      "amazon_value": "LAVENDER.",
+      "confidence_score": 0.1111111111111111
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LT. PINK",
+      "amazon_value": "LIGHT PINK",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003431-LT. PINK",
+      "amazon_value": "LIGHT PINK",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003431-LT. BLUE",
+      "amazon_value": "LIGHT-BLUE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003286-NAVY BLUE",
+      "amazon_value": "NAVY BLUE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "AQUA",
+      "amazon_value": "AQUA",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS003559-AQUA",
+      "amazon_value": "AQUA",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "LAVENDER",
+      "amazon_value": "LAVENDER",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDRSS002865-LAVENDER",
+      "amazon_value": "LAVENDER",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDNDA003008-MID BLUE",
+      "amazon_value": "MID BLUE",
+      "confidence_score": 0.2222222222222222
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-3Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 2.0
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "3-4Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "4-5Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "5-6Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "7-8Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "9-10Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "11-12Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "13-14Y",
+      "amazon_value": "IN",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-3Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 2.0
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "3-4Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "4-5Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "5-6Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "7-8Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "9-10Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "11-12Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "13-14Y",
+      "amazon_value": "Age",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-3Y",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "3-4Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "4-5Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "5-6Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "7-8Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "9-10Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "11-12Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "13-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2-14Y",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-3Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "3-4Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "4-5Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "5-6Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "7-8Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "9-10Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "11-12Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "13-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2-14Y",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNBS003098-MID BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNBS003099-LT. BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNHS003005-BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PBDNHS003005-WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "RUST",
+      "amazon_value": "Rust",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGSHSS002834-RUST",
+      "amazon_value": "Rust",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGDNHS003384-WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGSHSS003280-PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "PGSHSS003280-BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNBS003098-MID BLUE",
+      "amazon_value": "Mid-Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNBS003099-LT. BLUE",
+      "amazon_value": "Light-Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNHS003005-BLACK",
+      "amazon_value": "Black",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PBDNHS003005-WHITE",
+      "amazon_value": "White",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "RUST",
+      "amazon_value": "Rust",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGSHSS002834-RUST",
+      "amazon_value": "Rust",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGDNHS003384-WHITE",
+      "amazon_value": "White.",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGSHSS003280-PINK",
+      "amazon_value": "Pink",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "PGSHSS003280-BLUE",
+      "amazon_value": "Blue",
+      "confidence_score": 0.25
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "IN",
+      "amazon_value": "IN",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "Age",
+      "amazon_value": "IN",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "2 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "3 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "4 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "5 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "6 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "7 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "8 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "9 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "10 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "11 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "12 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "13 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "internal_value": "14 Years",
+      "amazon_value": "IN",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "IN",
+      "amazon_value": "Age",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "Age",
+      "amazon_value": "Age",
+      "confidence_score": 0.9777777777777777
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "2 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "3 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "4 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "5 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.24444444444444444
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "6 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "7 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "8 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "9 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "10 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "11 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "12 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "13 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "internal_value": "14 Years",
+      "amazon_value": "Age",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "2 Years",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "3 Years",
+      "amazon_value": "2 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "3 Years",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "4 Years",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "4 Years",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "5 Years",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "5 Years",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "6 Years",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "7 Years",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "8 Years",
+      "amazon_value": "7 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "9 Years",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "10 Years",
+      "amazon_value": "9 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "11 Years",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "12 Years",
+      "amazon_value": "11 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "IN",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "Age",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "13 Years",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size",
+      "internal_value": "14 Years",
+      "amazon_value": "13 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "2 Years",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "3 Years",
+      "amazon_value": "3 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "3 Years",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "4 Years",
+      "amazon_value": "4 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "4 Years",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "5 Years",
+      "amazon_value": "5 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "5 Years",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "6 Years",
+      "amazon_value": "6 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "7 Years",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "8 Years",
+      "amazon_value": "8 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "9 Years",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "10 Years",
+      "amazon_value": "10 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "11 Years",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "12 Years",
+      "amazon_value": "12 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "IN",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "Age",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "13 Years",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_to",
+      "internal_value": "14 Years",
+      "amazon_value": "14 Years",
+      "confidence_score": 0.12222222222222222
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Green",
+      "amazon_value": "Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Light Green",
+      "amazon_value": "Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Grey",
+      "amazon_value": "Grey",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Blue",
+      "amazon_value": "Blue",
+      "confidence_score": 0.35555555555555557
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Light Blue",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Off White",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Off-White",
+      "amazon_value": "Off White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Navy Blue",
+      "amazon_value": "Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Maroon",
+      "amazon_value": "Maroon",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Maroon & White",
+      "amazon_value": "Maroon",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "Black",
+      "amazon_value": "Black",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.standardized_values#1",
+      "internal_value": "White",
+      "amazon_value": "White",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Green",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Light Green",
+      "amazon_value": "Light Green",
+      "confidence_score": 0.26666666666666666
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Grey",
+      "amazon_value": "Grey",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Blue",
+      "amazon_value": "Light Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Light Blue",
+      "amazon_value": "Light Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Off White",
+      "amazon_value": "Off-White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Off-White",
+      "amazon_value": "Off-White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Blue",
+      "amazon_value": "Navy Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Navy Blue",
+      "amazon_value": "Navy Blue",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Maroon",
+      "amazon_value": "Maroon & White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Maroon & White",
+      "amazon_value": "Maroon & White",
+      "confidence_score": 0.08888888888888889
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Blue",
+      "amazon_value": "Blue",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "Black",
+      "amazon_value": "Black",
+      "confidence_score": 0.17777777777777778
+    },
+    {
+      "amazon_attribute": "color[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "internal_value": "White",
+      "amazon_value": "White",
+      "confidence_score": 0.17777777777777778
+    }
+  ],
+  "admin_rules": [
+    {
+      "scope": "product_type",
+      "scope_value": "SHOES",
+      "amazon_attribute": "footwear_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "rule_type": "hardcoded",
+      "rule_value": "Numeric"
+    },
+    {
+      "scope": "product_type",
+      "scope_value": "SHOES",
+      "amazon_attribute": "footwear_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "rule_type": "hardcoded",
+      "rule_value": "UK Footwear Size System"
+    },
+    {
+      "scope": "product_type",
+      "scope_value": "SHOES",
+      "amazon_attribute": "footwear_size[marketplace_id=A21TJRUUN4KGV]#1.width",
+      "rule_type": "hardcoded",
+      "rule_value": "Medium"
+    },
+    {
+      "scope": "product_type",
+      "scope_value": "SHOES",
+      "amazon_attribute": "height_map[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "rule_type": "hardcoded",
+      "rule_value": "Mid Top"
+    }
+  ],
+  "hardcoded_defaults": [
+    {
+      "amazon_attribute": "product_type#1.value",
+      "default_value": "SHIRT",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "::record_action",
+      "default_value": "Create or Replace (Full Update)",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "parentage_level[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "Child",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "variation_theme#1.name",
+      "default_value": "SIZE/COLOR",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "brand[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Purple United Kids",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "amzn1.volt.ca.product_id_type",
+      "default_value": "EAN",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "manufacturer[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Purple United Sales Ltd.",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "style[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Classic",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "age_range_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Kid",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "default_value": "IN",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "shirt_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "default_value": "Age",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "number_of_items[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "1",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "fit_type[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Regular",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "care_instructions[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Machine Wash",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "rtip_manufacturer_contact_information#1.value",
+      "default_value": "Purple United Sales Ltd., Kh. No. 55/14 & 55/15, Mundka, Delhi 110059",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "unit_count[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "1",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "external_product_information[marketplace_id=A21TJRUUN4KGV]#1.entity",
+      "default_value": "HSN Code",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "packer_contact_information[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Purple United Sales Ltd., Kh. No. 55/14 & 55/15, Mundka, Delhi 110059",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "condition_type[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "New",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "product_tax_code#1.value",
+      "default_value": "A_GEN_SUPERREDUCED",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "fulfillment_availability#1.fulfillment_channel_code",
+      "default_value": "AMAZON_IN",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.length.value",
+      "default_value": "18",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.length.unit",
+      "default_value": "Centimetres",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.width.value",
+      "default_value": "13",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.width.unit",
+      "default_value": "Centimetres",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.height.value",
+      "default_value": "5",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_dimensions[marketplace_id=A21TJRUUN4KGV]#1.height.unit",
+      "default_value": "Centimetres",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.length.value",
+      "default_value": "20",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.length.unit",
+      "default_value": "Centimeters",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.width.value",
+      "default_value": "15",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.width.unit",
+      "default_value": "Centimeters",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.height.value",
+      "default_value": "6",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_dimensions[marketplace_id=A21TJRUUN4KGV]#1.height.unit",
+      "default_value": "Centimeters",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_weight[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "300",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_package_weight[marketplace_id=A21TJRUUN4KGV]#1.unit",
+      "default_value": "Grams",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "country_of_origin[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "India",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_weight[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "280",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_weight[marketplace_id=A21TJRUUN4KGV]#1.unit",
+      "default_value": "Grams",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "importer_contact_information[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Purple United Sales Ltd., Kh. No. 55/14 & 55/15, Mundka, Delhi 110041",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "batteries_required[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "No",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "supplier_declared_dg_hz_regulation[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "Not Applicable",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "recommended_browse_nodes[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "Fashion > Girls > Clothing > Dresses & Jumpsuits > Dresses (1967972031)",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "department[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "girls",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "target_gender[marketplace_id=A21TJRUUN4KGV]#1.value",
+      "default_value": "Female",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "default_value": "IN",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "apparel_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "default_value": "Age",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "item_length_description[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Knee-Length",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "unit_count[marketplace_id=A21TJRUUN4KGV]#1.type[language_tag=en_IN].value",
+      "default_value": "count",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "closure[marketplace_id=A21TJRUUN4KGV]#1.type[language_tag=en_IN]#1.value",
+      "default_value": "Button",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "generic_keyword[marketplace_id=A21TJRUUN4KGV][language_tag=en_IN]#1.value",
+      "default_value": "Kids Boys Bermuda Denim Shorts Elastic Waist Casual Summer Wear Lightweight Breathable Comfortable Durable Mid Rise Stretch Fabric Outdoor Beach Holiday Fashion Clothing Active Fit Bermudas",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_system",
+      "default_value": "IN",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "bottoms_size[marketplace_id=A21TJRUUN4KGV]#1.size_class",
+      "default_value": "Age",
+      "is_active": true
+    },
+    {
+      "amazon_attribute": "rise[marketplace_id=A21TJRUUN4KGV]#1.style[language_tag=en_IN]#1.value",
+      "default_value": "Mid Rise",
+      "is_active": true
+    }
+  ]
+}
