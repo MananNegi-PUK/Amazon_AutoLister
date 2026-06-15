@@ -49,6 +49,23 @@ def root():
 def health():
     return {"status": "ok"}
 
+@app.get("/api/debug")
+def debug_db():
+    """Debug endpoint to check MongoDB connectivity"""
+    from .database import mongo_db, MONGODB_URI
+    try:
+        # Test connection with a ping
+        mongo_db.client.admin.command('ping')
+        collections = mongo_db.list_collection_names()
+        return {
+            "status": "connected",
+            "db_name": mongo_db.name,
+            "collections": collections,
+            "uri_prefix": MONGODB_URI[:30] + "..." if MONGODB_URI else "not set"
+        }
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
 # FILE UPLOAD & MANAGEMENT ENDPOINTS
 # ----------------------------------------------------
 

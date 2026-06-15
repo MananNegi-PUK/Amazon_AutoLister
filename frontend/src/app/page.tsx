@@ -22,10 +22,10 @@ import {
 } from "lucide-react";
 
 // Get API URL from env or localStorage dynamically
-let API_URL = "http://localhost:8001";
+let API_URL = "https://earnest-alignment-production-de35.up.railway.app";
 if (typeof window !== "undefined") {
   const savedUrl = localStorage.getItem("API_URL");
-  const defaultUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
+  const defaultUrl = process.env.NEXT_PUBLIC_API_URL || "https://earnest-alignment-production-de35.up.railway.app";
   API_URL = savedUrl || defaultUrl;
 }
 
