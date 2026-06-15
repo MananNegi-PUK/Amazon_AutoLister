@@ -24,14 +24,21 @@ except Exception as _seed_err:
 app = FastAPI(title="Amazon Auto Lister API", version="1.0.0")
 
 # Setup CORS middleware
+ALLOWED_ORIGINS = [
+    "https://amazonautolister-production.up.railway.app",
+    "https://earnest-alignment-production-de35.up.railway.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, restrict to frontend domain
-    allow_credentials=True,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=False,   # Must be False when allow_origins includes "*" or wildcards
     allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["Content-Disposition"],
 )
+
 
 UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./data/uploads")
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "./data/outputs")
