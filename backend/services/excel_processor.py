@@ -21,7 +21,7 @@ class ExcelProcessor:
                 - 'valid_values': dict of label -> list of allowed values
                 - 'sheet_info': dict of template indices and layout
         """
-        wb = openpyxl.load_workbook(filepath, data_only=True)
+        wb = openpyxl.load_workbook(filepath, read_only=True, data_only=True)
         
         # 1. Parse Valid Values Sheet
         valid_values_map = {}

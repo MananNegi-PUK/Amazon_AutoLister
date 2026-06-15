@@ -8,7 +8,7 @@ class LearningEngine:
     @staticmethod
     def load_excel_as_dicts(filepath):
         """Loads an excel sheet as a list of dictionaries (keys are header names)."""
-        wb = openpyxl.load_workbook(filepath, data_only=True)
+        wb = openpyxl.load_workbook(filepath, read_only=True, data_only=True)
         # If it has a 'Template' sheet, use it (Amazon template style)
         if 'Template' in wb.sheetnames:
             sheetname_to_use = 'Template'
@@ -16,36 +16,51 @@ class LearningEngine:
             sheetname_to_use = None
             for name in wb.sheetnames:
                 sheet = wb[name]
-                if sheet.max_row > 1:
+                # In read_only mode, check if sheet has at least one row by reading the first row
+                first_row = next(sheet.iter_rows(max_row=1, values_only=True), None)
+                if first_row:
                     sheetname_to_use = name
                     break
         
         if not sheetname_to_use:
+            wb.close()
             return []
             
         sheet = wb[sheetname_to_use]
-        rows = list(sheet.iter_rows(values_only=True))
-        if not rows:
+        row_iter = sheet.iter_rows(values_only=True)
+        
+        try:
+            first_row = next(row_iter)
+        except StopIteration:
+            wb.close()
             return []
             
         # Find first row with at least some strings to treat as headers
         header_idx = 0
+        rows = [first_row]
+        for _ in range(4):
+            try:
+                rows.append(next(row_iter))
+            except StopIteration:
+                break
+                
         if sheetname_to_use == 'Template':
             # For Amazon templates, check if Row 1 has settings, then row 5 contains attribute names (index 4)
             if rows[0] and rows[0][0] and "settings=" in str(rows[0][0]):
                 header_idx = 4
             else:
-                for idx, r in enumerate(rows[:5]):
+                for idx, r in enumerate(rows):
                     if any(isinstance(x, str) for x in r if x):
                         header_idx = idx
                         break
         else:
-            for idx, r in enumerate(rows[:5]):
+            for idx, r in enumerate(rows):
                 if any(isinstance(x, str) for x in r if x):
                     header_idx = idx
                     break
                     
-        raw_headers = [str(h).strip() if h is not None else f"Col_{i}" for i, h in enumerate(rows[header_idx])]
+        header_row = rows[header_idx]
+        raw_headers = [str(h).strip() if h is not None else f"Col_{i}" for i, h in enumerate(header_row)]
         headers = []
         seen = {}
         for h in raw_headers:
@@ -60,13 +75,24 @@ class LearningEngine:
         # Data rows start after header. For Amazon templates, start at Row 7 (index 6)
         start_row_idx = header_idx + 2 if (sheetname_to_use == 'Template' and header_idx == 4) else header_idx + 1
         
+        # Add data from already read rows
         for r in rows[start_row_idx:]:
-            if any(x is not None for x in r):
+            if r and any(x is not None for x in r):
                 row_dict = {}
                 for i, val in enumerate(r):
                     if i < len(headers):
                         row_dict[headers[i]] = val
                 data.append(row_dict)
+                
+        # Read the rest of the rows
+        for r in row_iter:
+            if r and any(x is not None for x in r):
+                row_dict = {}
+                for i, val in enumerate(r):
+                    if i < len(headers):
+                        row_dict[headers[i]] = val
+                data.append(row_dict)
+                
         wb.close()
         return data
 
@@ -80,18 +106,22 @@ class LearningEngine:
         attributes = template_meta["attributes"]
         
         # Load data rows from history template (starts from data_row row)
-        wb_hist = openpyxl.load_workbook(history_filepath, data_only=True)
+        wb_hist = openpyxl.load_workbook(history_filepath, read_only=True, data_only=True)
         sheet_t = wb_hist['Template']
         
         sheet_info = template_meta["sheet_info"]
         data_start_row = sheet_info.get("data_row", 7)
         attr_row = sheet_info.get("attribute_row", 5)
         
-        tech_names = [cell.value for cell in sheet_t[attr_row]]
+        tech_names = []
+        for idx, row in enumerate(sheet_t.iter_rows(values_only=True)):
+            if idx + 1 == attr_row:
+                tech_names = list(row)
+                break
         
         history_rows = []
-        for r_idx in range(data_start_row, sheet_t.max_row + 1):
-            row_vals = [sheet_t.cell(row=r_idx, column=c_idx + 1).value for c_idx in range(len(tech_names))]
+        for row in sheet_t.iter_rows(min_row=data_start_row, values_only=True):
+            row_vals = list(row) + [None] * (len(tech_names) - len(row))
             if any(v is not None for v in row_vals):
                 row_dict = {tech_names[i]: row_vals[i] for i in range(len(tech_names)) if tech_names[i]}
                 history_rows.append(row_dict)

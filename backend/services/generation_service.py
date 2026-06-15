@@ -217,9 +217,27 @@ class GenerationService:
             learned_sku_col = m_sku.internal_column
 
         # 2. Enrich child rows with joins from Master & Content sheets
+        # Pre-build indices to speed up joins from O(N*M*C) to O(M*C + N)
+        master_index = {}
+        for m_row in master_sheet:
+            for mk, mv in m_row.items():
+                if mv is not None:
+                    mv_str = str(mv).strip().lower()
+                    if mv_str and mv_str not in master_index:
+                        master_index[mv_str] = m_row
+
+        content_index = {}
+        for ct_row in content_sheet:
+            for ck, cv in ct_row.items():
+                if cv is not None:
+                    cv_str = str(cv).strip().lower()
+                    if cv_str and cv_str not in content_index:
+                        content_index[cv_str] = ct_row
+
         joined_items = []
         for c_row in unique_children:
             sku_val = str(c_row.get(sku_col)).strip()
+            sku_val_lower = sku_val.lower()
             
             # Extract parent style code smartly
             sku_for_style = sku_val
@@ -271,37 +289,20 @@ class GenerationService:
                 if best_style:
                     style_val = best_style
             
+            style_val_lower = style_val.lower() if style_val else None
+            
             # Combine child attributes
             flat_item = dict(c_row)
             
-            # Join with Master Sheet (match by SKU/EAN or Style Code)
-            m_matched = None
-            for m_row in master_sheet:
-                # Find matching column
-                for mk, mv in m_row.items():
-                    if mv is not None:
-                        mv_str = str(mv).strip()
-                        if mv_str == sku_val or mv_str == style_val:
-                            m_matched = m_row
-                            break
-                if m_matched:
-                    break
+            # Join with Master Sheet
+            m_matched = master_index.get(sku_val_lower) or (master_index.get(style_val_lower) if style_val_lower else None)
             if m_matched:
                 for k, v in m_matched.items():
                     if k not in flat_item or flat_item[k] is None:
                         flat_item[k] = v
                         
             # Join with Content Sheet
-            c_matched = None
-            for ct_row in content_sheet:
-                for ck, cv in ct_row.items():
-                    if cv is not None:
-                        cv_str = str(cv).strip()
-                        if cv_str == sku_val or cv_str == style_val:
-                            c_matched = ct_row
-                            break
-                if c_matched:
-                    break
+            c_matched = content_index.get(sku_val_lower) or (content_index.get(style_val_lower) if style_val_lower else None)
             if c_matched:
                 for k, v in c_matched.items():
                     if k not in flat_item or flat_item[k] is None:
@@ -317,9 +318,47 @@ class GenerationService:
         # 4. Generate Rows for the Amazon Template
         generated_rows = []
         
+        # Pre-fetch all rules, defaults, and mappings to avoid N+1 database queries
+        from ..models import AdminRule, HardcodedDefault, LearnedMapping, ValueMapping
+        admin_rules = db.query(AdminRule).all()
+        hardcoded_defaults = db.query(HardcodedDefault).all()
+        learned_mappings = db.query(LearnedMapping).all()
+        value_mappings = db.query(ValueMapping).all()
+        
+        # Group admin rules by (amazon_attribute, scope, scope_value)
+        rules_cache = {}
+        for r in admin_rules:
+            key = (r.amazon_attribute, r.scope, r.scope_value)
+            rules_cache[key] = r
+            
+        # Index active defaults by amazon_attribute
+        defaults_cache = {}
+        for d in hardcoded_defaults:
+            if d.is_active:
+                defaults_cache[d.amazon_attribute] = d
+                
+        # Index active mappings by amazon_attribute
+        mappings_cache = {}
+        for m in learned_mappings:
+            if m.is_active:
+                mappings_cache[m.amazon_attribute] = m
+                
+        # Group value mappings by (amazon_attribute, internal_value)
+        value_mappings_cache = {}
+        for v in value_mappings:
+            key = (v.amazon_attribute, v.internal_value)
+            value_mappings_cache[key] = v
+            
+        rules_lookup = {
+            "admin_rules": rules_cache,
+            "defaults": defaults_cache,
+            "learned_mappings": mappings_cache,
+            "value_mappings": value_mappings_cache
+        }
+        
         # We need to resolve the Product Type. Let's look up if there's a default in db
         resolved_ptd = "SHIRT" # default fallback
-        ptd_default = db.query(HardcodedDefault).filter(HardcodedDefault.amazon_attribute == "product_type#1.value").first()
+        ptd_default = defaults_cache.get("product_type#1.value")
         if ptd_default and ptd_default.is_active:
             resolved_ptd = ptd_default.default_value
             
@@ -399,7 +438,7 @@ class GenerationService:
                     
                 # Resolve value using Rule Engine
                 val, source_type, score = RuleEngine.resolve_attribute_value(
-                    db, attr, sample_child, product_type=resolved_ptd, brand=sample_child.get("Brand"), category=sample_child.get("Category")
+                    db, attr, sample_child, product_type=resolved_ptd, brand=sample_child.get("Brand"), category=sample_child.get("Category"), rules_lookup=rules_lookup
                 )
                 if val is not None:
                     if "bullet_point" in attr.lower():
@@ -457,7 +496,7 @@ class GenerationService:
                         
                     # Resolve value using Rule Engine
                     val, source_type, score = RuleEngine.resolve_attribute_value(
-                        db, attr, child_flat, product_type=resolved_ptd, brand=child_flat.get("Brand"), category=child_flat.get("Category")
+                        db, attr, child_flat, product_type=resolved_ptd, brand=child_flat.get("Brand"), category=child_flat.get("Category"), rules_lookup=rules_lookup
                     )
                     if val is not None:
                         if "bullet_point" in attr.lower():

@@ -2,7 +2,7 @@ from ..models import AdminRule, HardcodedDefault, LearnedMapping, ValueMapping
 
 class RuleEngine:
     @classmethod
-    def resolve_attribute_value(cls, db, amazon_attr: str, item_data: dict, product_type: str = None, brand: str = None, category: str = None) -> tuple:
+    def resolve_attribute_value(cls, db, amazon_attr: str, item_data: dict, product_type: str = None, brand: str = None, category: str = None, rules_lookup: dict = None) -> tuple:
         """
         Resolves the value of an Amazon attribute for a given item.
         Returns:
@@ -12,57 +12,90 @@ class RuleEngine:
                 - confidence_score: Float between 0.0 and 1.0.
         """
         # 1. Evaluate Admin Rules (Scope Specificity: Product Type > Brand > Category > Global)
-        # Search for Product Type rule
-        if product_type:
-            rule = db.query(AdminRule).filter(
-                AdminRule.amazon_attribute == amazon_attr,
-                AdminRule.scope == "product_type",
-                AdminRule.scope_value == product_type
-            ).first()
+        if rules_lookup is not None:
+            admin_rules_cache = rules_lookup.get("admin_rules", {})
+            
+            # Product Type rule
+            if product_type:
+                rule = admin_rules_cache.get((amazon_attr, "product_type", product_type))
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
+                    
+            # Brand rule
+            if brand:
+                rule = admin_rules_cache.get((amazon_attr, "brand", brand))
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
+                    
+            # Category rule
+            if category:
+                rule = admin_rules_cache.get((amazon_attr, "category", category))
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
+                    
+            # Global rule
+            rule = admin_rules_cache.get((amazon_attr, "global", None))
             if rule:
                 return rule.rule_value, "admin_rule", 1.0
-                
-        # Search for Brand rule
-        if brand:
-            rule = db.query(AdminRule).filter(
-                AdminRule.amazon_attribute == amazon_attr,
-                AdminRule.scope == "brand",
-                AdminRule.scope_value == brand
-            ).first()
-            if rule:
-                return rule.rule_value, "admin_rule", 1.0
-                
-        # Search for Category rule
-        if category:
-            rule = db.query(AdminRule).filter(
-                AdminRule.amazon_attribute == amazon_attr,
-                AdminRule.scope == "category",
-                AdminRule.scope_value == category
-            ).first()
-            if rule:
-                return rule.rule_value, "admin_rule", 1.0
+        else:
+            # Search for Product Type rule in DB
+            if product_type:
+                rule = db.query(AdminRule).filter(
+                    AdminRule.amazon_attribute == amazon_attr,
+                    AdminRule.scope == "product_type",
+                    AdminRule.scope_value == product_type
+                ).first()
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
+                    
+            # Search for Brand rule
+            if brand:
+                rule = db.query(AdminRule).filter(
+                    AdminRule.amazon_attribute == amazon_attr,
+                    AdminRule.scope == "brand",
+                    AdminRule.scope_value == brand
+                ).first()
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
+                    
+            # Search for Category rule
+            if category:
+                rule = db.query(AdminRule).filter(
+                    AdminRule.amazon_attribute == amazon_attr,
+                    AdminRule.scope == "category",
+                    AdminRule.scope_value == category
+                ).first()
+                if rule:
+                    return rule.rule_value, "admin_rule", 1.0
 
-        # Search for Global rule
-        rule = db.query(AdminRule).filter(
-            AdminRule.amazon_attribute == amazon_attr,
-            AdminRule.scope == "global"
-        ).first()
-        if rule:
-            return rule.rule_value, "admin_rule", 1.0
+            # Search for Global rule
+            rule = db.query(AdminRule).filter(
+                AdminRule.amazon_attribute == amazon_attr,
+                AdminRule.scope == "global"
+            ).first()
+            if rule:
+                return rule.rule_value, "admin_rule", 1.0
 
         # 2. Evaluate Hardcoded Admin Defaults
-        default_cfg = db.query(HardcodedDefault).filter(
-            HardcodedDefault.amazon_attribute == amazon_attr,
-            HardcodedDefault.is_active == True
-        ).first()
+        if rules_lookup is not None:
+            default_cfg = rules_lookup.get("defaults", {}).get(amazon_attr)
+        else:
+            default_cfg = db.query(HardcodedDefault).filter(
+                HardcodedDefault.amazon_attribute == amazon_attr,
+                HardcodedDefault.is_active == True
+            ).first()
+            
         if default_cfg:
             return default_cfg.default_value, "hardcoded_default", 1.0
 
         # 3. Evaluate Learned Column Mappings & Value Translations
-        mapping = db.query(LearnedMapping).filter(
-            LearnedMapping.amazon_attribute == amazon_attr,
-            LearnedMapping.is_active == True
-        ).first()
+        if rules_lookup is not None:
+            mapping = rules_lookup.get("learned_mappings", {}).get(amazon_attr)
+        else:
+            mapping = db.query(LearnedMapping).filter(
+                LearnedMapping.amazon_attribute == amazon_attr,
+                LearnedMapping.is_active == True
+            ).first()
         
         if mapping:
             internal_col = mapping.internal_column
@@ -84,10 +117,13 @@ class RuleEngine:
             if raw_val is not None:
                 raw_val_str = str(raw_val).strip()
                 # Check for value translation (e.g. size/color maps)
-                translation = db.query(ValueMapping).filter(
-                    ValueMapping.amazon_attribute == amazon_attr,
-                    ValueMapping.internal_value == raw_val_str
-                ).first()
+                if rules_lookup is not None:
+                    translation = rules_lookup.get("value_mappings", {}).get((amazon_attr, raw_val_str))
+                else:
+                    translation = db.query(ValueMapping).filter(
+                        ValueMapping.amazon_attribute == amazon_attr,
+                        ValueMapping.internal_value == raw_val_str
+                    ).first()
                 
                 if translation:
                     return translation.amazon_value, "value_mapping", translation.confidence_score
