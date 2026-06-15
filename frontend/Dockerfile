@@ -7,8 +7,6 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-# We pass the backend URL as build environment if needed, or configure dynamically
-ENV NEXT_PUBLIC_API_URL=http://localhost:8000
 RUN npm run build
 
 # Runner stage

@@ -1,6 +1,6 @@
 import os
 import json
-from sqlalchemy.orm import Session
+from .database import Session
 from .models import LearnedMapping, ValueMapping, AdminRule, HardcodedDefault
 from .database import SessionLocal
 

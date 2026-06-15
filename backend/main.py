@@ -6,9 +6,8 @@ from typing import List, Optional
 from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
-from sqlalchemy.orm import Session
+from .database import engine, Base, get_db, SessionLocal, Session
 
-from .database import engine, Base, get_db, SessionLocal
 from .models import SourceFile, LearnedMapping, ValueMapping, HardcodedDefault, AdminRule, GenerationTask
 from .services.learning_engine import LearningEngine
 from .services.generation_service import GenerationService
@@ -96,7 +95,7 @@ def get_files(db: Session = Depends(get_db)):
     return grouped
 
 @app.delete("/api/files/{file_id}")
-def delete_file(file_id: int, db: Session = Depends(get_db)):
+def delete_file(file_id: str, db: Session = Depends(get_db)):
     file_record = db.query(SourceFile).filter(SourceFile.id == file_id).first()
     if not file_record:
         raise HTTPException(status_code=404, detail="File not found")
@@ -198,7 +197,7 @@ def get_mappings(db: Session = Depends(get_db)):
     }
 
 @app.post("/api/mappings/column/{mapping_id}/toggle")
-def toggle_column_mapping(mapping_id: int, db: Session = Depends(get_db)):
+def toggle_column_mapping(mapping_id: str, db: Session = Depends(get_db)):
     m = db.query(LearnedMapping).filter(LearnedMapping.id == mapping_id).first()
     if not m:
         raise HTTPException(status_code=404, detail="Mapping not found")
@@ -223,7 +222,7 @@ def create_or_override_column_mapping(
     return {"status": "success"}
 
 @app.delete("/api/mappings/value/{mapping_id}")
-def delete_value_mapping(mapping_id: int, db: Session = Depends(get_db)):
+def delete_value_mapping(mapping_id: str, db: Session = Depends(get_db)):
     v = db.query(ValueMapping).filter(ValueMapping.id == mapping_id).first()
     if not v:
         raise HTTPException(status_code=404, detail="Mapping not found")
@@ -285,7 +284,7 @@ def create_rule(
     return {"status": "success", "id": r.id}
 
 @app.delete("/api/settings/rules/{rule_id}")
-def delete_rule(rule_id: int, db: Session = Depends(get_db)):
+def delete_rule(rule_id: str, db: Session = Depends(get_db)):
     r = db.query(AdminRule).filter(AdminRule.id == rule_id).first()
     if not r:
         raise HTTPException(status_code=404, detail="Rule not found")
