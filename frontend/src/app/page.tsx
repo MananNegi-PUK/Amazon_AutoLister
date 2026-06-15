@@ -21,17 +21,12 @@ import {
   RefreshCw
 } from "lucide-react";
 
-// Get API URL from env or localStorage dynamically
-let API_URL = "https://earnest-alignment-production-de35.up.railway.app";
-if (typeof window !== "undefined") {
-  const savedUrl = localStorage.getItem("API_URL");
-  const defaultUrl = process.env.NEXT_PUBLIC_API_URL || "https://earnest-alignment-production-de35.up.railway.app";
-  API_URL = savedUrl || defaultUrl;
-}
+// Production backend URL — locked, no manual configuration needed
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://earnest-alignment-production-de35.up.railway.app";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("dashboard");
-  const [currentApiUrl, setCurrentApiUrl] = useState(API_URL);
+
   const [files, setFiles] = useState<any>({
     item_directory: [],
     master_sheet: [],
@@ -104,6 +99,10 @@ export default function Home() {
   };
 
   useEffect(() => {
+    // Clear any previously saved API URL — backend is now permanently configured
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("API_URL");
+    }
     fetchData();
   }, []);
 
@@ -381,17 +380,7 @@ export default function Home() {
     }
   };
 
-  const handleUpdateApiUrl = () => {
-    const newUrl = prompt("Enter Backend API URL (e.g., https://backend-production.up.railway.app):", currentApiUrl);
-    if (newUrl) {
-      const trimmed = newUrl.trim().replace(/\/$/, "");
-      localStorage.setItem("API_URL", trimmed);
-      API_URL = trimmed;
-      setCurrentApiUrl(trimmed);
-      // Reload data with new URL
-      setTimeout(() => fetchData(), 100);
-    }
-  };
+
 
   return (
     <div className="flex h-screen bg-slate-50 text-slate-800 font-sans overflow-hidden">
@@ -496,15 +485,9 @@ export default function Home() {
             <h2 className="font-bold text-lg text-slate-800 capitalize">{activeTab.replace("-", " ")}</h2>
           </div>
           <div className="flex items-center gap-4">
-            <div className="text-slate-500 text-xs flex items-center gap-1">
-              <span>Server:</span>
-              <button 
-                onClick={handleUpdateApiUrl}
-                className="font-semibold text-slate-700 hover:text-amber-600 hover:underline cursor-pointer transition-colors"
-                title="Click to edit Backend API URL"
-              >
-                {currentApiUrl}
-              </button>
+            <div className="text-xs flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse inline-block"></span>
+              <span className="text-emerald-700 font-semibold">Live Backend Connected</span>
             </div>
             <div className="h-8 w-px bg-slate-200"></div>
             <div className="flex items-center gap-2">
