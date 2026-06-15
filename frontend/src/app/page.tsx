@@ -98,6 +98,16 @@ export default function Home() {
     }
   };
 
+  // Fast refresh: only re-fetch the files list (1 call instead of 5)
+  const fetchFilesOnly = async () => {
+    try {
+      const filesRes = await fetch(`${API_URL}/api/files`);
+      if (filesRes.ok) setFiles(await filesRes.json());
+    } catch (err) {
+      console.error("Error refreshing files:", err);
+    }
+  };
+
   useEffect(() => {
     // Clear any previously saved API URL — backend is now permanently configured
     if (typeof window !== "undefined") {
@@ -140,6 +150,13 @@ export default function Home() {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("file_type", fileType);
+
+    // Optimistic UI: add a placeholder entry immediately
+    const tempId = `uploading_${Date.now()}`;
+    setFiles((prev: any) => ({
+      ...prev,
+      [fileType]: [...(prev[fileType] || []), { id: tempId, filename: `⏳ ${file.name}`, uploaded_at: new Date().toISOString(), uploading: true }]
+    }));
     
     try {
       const res = await fetch(`${API_URL}/api/upload`, {
@@ -157,36 +174,53 @@ export default function Home() {
         } else if (fileType === "amazon_template") {
           setSelectedTemplate(newIdStr);
         }
-        fetchData();
+        // Replace placeholder with real data from server
+        fetchFilesOnly();
       } else {
+        // Remove placeholder on failure
+        setFiles((prev: any) => ({
+          ...prev,
+          [fileType]: prev[fileType].filter((f: any) => f.id !== tempId)
+        }));
         alert("Upload failed.");
       }
     } catch (err) {
+      setFiles((prev: any) => ({
+        ...prev,
+        [fileType]: prev[fileType].filter((f: any) => f.id !== tempId)
+      }));
       console.error(err);
       alert("Error uploading file.");
     }
   };
 
-  // Delete file handler
+  // Delete file handler — optimistic: remove from UI immediately
   const handleDeleteFile = async (id: any) => {
     if (!confirm("Are you sure you want to delete this file?")) return;
+    const idStr = id.toString();
+
+    // Optimistic update: remove from UI right away
+    const prevFiles = files;
+    setFiles((prev: any) => {
+      const next: any = {};
+      for (const key of Object.keys(prev)) {
+        next[key] = prev[key].filter((f: any) => f.id.toString() !== idStr);
+      }
+      return next;
+    });
+    if (selectedDir === idStr) { setSelectedDir(""); setSelectedMaster(""); }
+    if (selectedContent === idStr) setSelectedContent("");
+    if (selectedTemplate === idStr) setSelectedTemplate("");
+
     try {
       const res = await fetch(`${API_URL}/api/files/${id}`, { method: "DELETE" });
-      if (res.ok) {
-        const idStr = id.toString();
-        if (selectedDir === idStr) {
-          setSelectedDir("");
-          setSelectedMaster("");
-        }
-        if (selectedContent === idStr) {
-          setSelectedContent("");
-        }
-        if (selectedTemplate === idStr) {
-          setSelectedTemplate("");
-        }
-        fetchData();
+      if (!res.ok) {
+        // Rollback if delete failed
+        setFiles(prevFiles);
+        alert("Delete failed. Please try again.");
       }
     } catch (err) {
+      setFiles(prevFiles);
       console.error(err);
     }
   };

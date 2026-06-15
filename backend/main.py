@@ -93,13 +93,14 @@ async def upload_file(
     )
     db.add(source_file)
     db.commit()
-    db.refresh(source_file)
+    # No db.refresh() needed — commit() already sets source_file.id from insert_one result
     
+    import datetime
     return {
         "id": source_file.id,
         "file_type": source_file.file_type,
         "filename": source_file.filename,
-        "uploaded_at": source_file.uploaded_at
+        "uploaded_at": source_file.uploaded_at.isoformat() if isinstance(source_file.uploaded_at, datetime.datetime) else str(source_file.uploaded_at)
     }
 
 @app.get("/api/files")
