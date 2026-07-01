@@ -10,6 +10,35 @@ from .learning_engine import LearningEngine
 
 logger = logging.getLogger(__name__)
 
+def is_brand_attribute(attr_name: str) -> bool:
+    name_lower = attr_name.lower()
+    if "brand" not in name_lower:
+        return False
+    if name_lower.endswith(".value") or name_lower == "brand_name" or name_lower == "brand":
+        if "relationship" not in name_lower and "group" not in name_lower:
+            return True
+    return False
+
+def is_epi_entity_attribute(attr_name: str) -> bool:
+    name_lower = attr_name.lower()
+    return "external_product_information" in name_lower and name_lower.endswith(".entity")
+
+def is_epi_value_attribute(attr_name: str) -> bool:
+    name_lower = attr_name.lower()
+    return "external_product_information" in name_lower and name_lower.endswith(".value")
+
+def is_color_map_attribute(attr_name: str) -> bool:
+    name_lower = attr_name.lower()
+    if "color" not in name_lower:
+        return False
+    return "standardized_values" in name_lower or "color_map" in name_lower
+
+def is_color_name_attribute(attr_name: str) -> bool:
+    name_lower = attr_name.lower()
+    if "color" not in name_lower:
+        return False
+    return name_lower.endswith(".value") and "standardized_values" not in name_lower and "color_map" not in name_lower
+
 class GenerationService:
     @staticmethod
     def extract_style_code(sku):
@@ -440,6 +469,25 @@ class GenerationService:
                 val, source_type, score = RuleEngine.resolve_attribute_value(
                     db, attr, sample_child, product_type=resolved_ptd, brand=sample_child.get("Brand"), category=sample_child.get("Category"), rules_lookup=rules_lookup
                 )
+                
+                # Rule Overrides
+                if is_brand_attribute(attr):
+                    div_val = ""
+                    for k, v in sample_child.items():
+                        if k.strip().lower() == "division":
+                            div_val = str(v).strip().upper() if v is not None else ""
+                            break
+                    if div_val == "FOOTWEAR":
+                        val = "Toothless"
+                        source_type = "override"
+                    elif div_val in ["APPAREL", "ACCESSORIES"]:
+                        val = "Purple United Kids"
+                        source_type = "override"
+                        
+                elif is_color_map_attribute(attr):
+                    if val is not None:
+                        val = str(val).title()
+                        source_type = "override"
                 if val is not None:
                     if "bullet_point" in attr.lower():
                         import re
@@ -498,6 +546,54 @@ class GenerationService:
                     val, source_type, score = RuleEngine.resolve_attribute_value(
                         db, attr, child_flat, product_type=resolved_ptd, brand=child_flat.get("Brand"), category=child_flat.get("Category"), rules_lookup=rules_lookup
                     )
+                    
+                    # Rule Overrides
+                    if is_brand_attribute(attr):
+                        div_val = ""
+                        for k, v in child_flat.items():
+                            if k.strip().lower() == "division":
+                                div_val = str(v).strip().upper() if v is not None else ""
+                                break
+                        if div_val == "FOOTWEAR":
+                            val = "Toothless"
+                            source_type = "override"
+                        elif div_val in ["APPAREL", "ACCESSORIES"]:
+                            val = "Purple United Kids"
+                            source_type = "override"
+                            
+                    elif is_epi_entity_attribute(attr):
+                        val = "HSN Code"
+                        source_type = "override"
+                        
+                    elif is_epi_value_attribute(attr):
+                        hs_val = ""
+                        for k, v in child_flat.items():
+                            if k.strip().lower() in ["hs code", "hscode", "hsn code", "hsncode"]:
+                                hs_val = str(v).strip() if v is not None else ""
+                                break
+                        if hs_val:
+                            val = hs_val
+                            source_type = "override"
+                            
+                    elif is_color_name_attribute(attr):
+                        c_val = ""
+                        for k, v in child_flat.items():
+                            if k.strip().lower() in ["color", "color_name", "item_color", "item color"]:
+                                c_val = str(v).strip() if v is not None else ""
+                                break
+                        if c_val:
+                            val = c_val
+                            source_type = "override"
+                            
+                    elif is_color_map_attribute(attr):
+                        c_val = ""
+                        for k, v in child_flat.items():
+                            if k.strip().lower() in ["color", "color_name", "item_color", "item color"]:
+                                c_val = str(v).strip() if v is not None else ""
+                                break
+                        if c_val:
+                            val = c_val.title()
+                            source_type = "override"
                     if val is not None:
                         if "bullet_point" in attr.lower():
                             import re

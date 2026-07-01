@@ -153,6 +153,10 @@ def delete_file(file_id: str, db: Session = Depends(get_db)):
 
 def run_training_task(history_id: str, directory_id: Optional[str], master_id: Optional[str], content_id: Optional[str], db_session_creator):
     db = db_session_creator()
+    history_file = None
+    dir_file = None
+    master_file = None
+    content_file = None
     try:
         # If master_id is not provided, default to directory_id since Item Directory and Master Sheet are the same
         if directory_id and not master_id:
@@ -175,6 +179,26 @@ def run_training_task(history_id: str, directory_id: Optional[str], master_id: O
     except Exception as e:
         print(f"Error in training background task: {e}")
     finally:
+        # Clean up source files from disk
+        for file_obj in [history_file, dir_file, master_file, content_file]:
+            if file_obj and file_obj.filepath and os.path.exists(file_obj.filepath):
+                try:
+                    os.remove(file_obj.filepath)
+                except Exception:
+                    pass
+        # Clean up source files from DB
+        file_ids = [fid for fid in [history_id, directory_id, master_id, content_id] if fid]
+        for fid in file_ids:
+            try:
+                file_record = db.query(SourceFile).filter(SourceFile.id == fid).first()
+                if file_record:
+                    db.delete(file_record)
+            except Exception as clean_err:
+                print(f"Error cleaning up SourceFile record {fid}: {clean_err}")
+        try:
+            db.commit()
+        except Exception:
+            pass
         db.close()
 
 @app.post("/api/train")
@@ -392,6 +416,22 @@ def run_generation_task(
         task.completed_at = datetime.datetime.utcnow()
         task_log(f"❌ ERROR: {str(e)}\n{traceback.format_exc()}")
     finally:
+        # Clean up source files from disk
+        for filepath in [directory_path, master_path, content_path, template_path]:
+            if filepath and os.path.exists(filepath):
+                try:
+                    os.remove(filepath)
+                except Exception:
+                    pass
+        # Clean up source files from DB
+        for filepath in [directory_path, master_path, content_path, template_path]:
+            if filepath:
+                try:
+                    file_record = db.query(SourceFile).filter(SourceFile.filepath == filepath).first()
+                    if file_record:
+                        db.delete(file_record)
+                except Exception:
+                    pass
         db.add(task)
         db.commit()
         db.close()
